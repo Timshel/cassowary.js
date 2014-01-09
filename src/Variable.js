@@ -67,7 +67,7 @@ c.AbstractVariable = c.inherit({
 
 c.Variable = c.inherit({
   _t: "c.Variable",
-  extends: c.AbstractVariable,
+  "extends": c.AbstractVariable,
   initialize: function(args) {
     this._init(args, "v");
     var vm = c.Variable._map;
@@ -81,7 +81,7 @@ c.Variable = c.inherit({
 
 c.DummyVariable = c.inherit({
   _t: "c.DummyVariable",
-  extends: c.AbstractVariable,
+  "extends": c.AbstractVariable,
   initialize: function(args) {
     this._init(args, "d");
   },
@@ -92,7 +92,7 @@ c.DummyVariable = c.inherit({
 
 c.ObjectiveVariable = c.inherit({
   _t: "c.ObjectiveVariable",
-  extends: c.AbstractVariable,
+  "extends": c.AbstractVariable,
   initialize: function(args) {
     this._init(args, "o");
   },
@@ -101,7 +101,7 @@ c.ObjectiveVariable = c.inherit({
 
 c.SlackVariable = c.inherit({
   _t: "c.SlackVariable",
-  extends: c.AbstractVariable,
+  "extends": c.AbstractVariable,
   initialize: function(args) {
     this._init(args, "s");
   },
